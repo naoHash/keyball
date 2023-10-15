@@ -80,3 +80,8 @@ void oledkit_render_info_user(void) {
     keyball_oled_render_layerinfo();
 }
 #endif
+
+// Auto mouse
+void pointing_device_init_user(void) {
+    set_auto_mouse_enable(true);         // always required before the auto mouse feature will work
+}
